@@ -1,13 +1,13 @@
 export const projectsData = [
   {
     id: 1,
-    title: "Casta",
-    date: "Janvier 2020",
-    languages: ["React", "Php", "Sass"],
+    title: "CV Voldemort",
+    date: "Juin 2021",
+    languages: ["Html", "CSS", "JavaScript"],
     infos:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas cumque labore suscipit, pariatur laboriosam autem omnis saepe quisquam enim iste.",
-    img: "./assets/img/projet-2.jpg",
-    link: "http://www.google.com",
+      "Projet 1 | Wild Code School | Création d'un premier site web sous forme de CV responsive d'un personnage fictif en 3 semaines.",
+    img: "./assets/img/voldemort.jpg",
+    link: "https://cv-tom-jedusor.netlify.app/",
   },
   {
     id: 2,
