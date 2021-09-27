@@ -1,20 +1,20 @@
 import React, { useEffect } from "react";
 
 const DynamicText = () => {
-  let array = ['simple', 'clear', 'smart', 'strong'];
+  let array = ["simple", "clear", "smart", "strong"];
   let wordIndex = 0;
   let letterIndex = 0;
 
   useEffect(() => {
-    const target = document.getElementById('text-target');
+    const target = document.getElementById("text-target");
 
     const createLetter = () => {
-      const letter = document.createElement('span');
+      const letter = document.createElement("span");
       target.appendChild(letter);
 
-      letter.classList.add('letter');
-      letter.style.opacity = '0';
-      letter.style.animation = 'anim 5s ease forwards';
+      letter.classList.add("letter");
+      letter.style.opacity = "0";
+      letter.style.animation = "anim 5s ease forwards";
       letter.textContent = array[wordIndex][letterIndex];
 
       setTimeout(() => {

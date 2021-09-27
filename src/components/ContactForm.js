@@ -33,7 +33,7 @@ const ContactForm = () => {
     };
 
     if (name && isEmail() && message) {
-      const templateId = "template_lerq41h";
+      const templateId = "template_aofmtvBG";
 
       nameS.classList.remove("red");
       emailS.classList.remove("red");
