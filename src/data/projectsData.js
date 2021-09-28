@@ -30,12 +30,12 @@ export const projectsData = [
   },
   {
     id: 4,
-    title: 'Creative Dev',
-    date: 'Juillet 2020',
-    languages: ['Vue', 'Php'],
+    title: 'Cine Plus',
+    date: 'Septembre 2021',
+    languages: ['React', 'CSS'],
     infos:
-      'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas cumque labore suscipit, pariatur laboriosam autem omnis saepe quisquam enim iste.',
-    img: './assets/img/projet-4.jpg',
-    link: 'http://www.google.com',
+      "Création d'un site de service de vidéos à la demande réaliser grâce à un tutoriel.",
+    img: './assets/img/cine-plus.jpg',
+    link: 'https://cine-plus.netlify.app',
   },
 ];
