@@ -34,7 +34,7 @@ export const projectsData = [
     date: 'Septembre 2021',
     languages: ['React', 'CSS'],
     infos:
-      "Création d'un site de service de vidéos à la demande réaliser grâce à un tutoriel.",
+      "Création d'un site de service de vidéos à la demande en utilisant une API. Réalisé grâce à un tutoriel.",
     img: './assets/img/cine-plus.jpg',
     link: 'https://cine-plus.netlify.app',
   },
