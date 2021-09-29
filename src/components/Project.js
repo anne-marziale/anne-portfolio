@@ -7,7 +7,6 @@ const Project = (props) => {
 
   const project = currentProject[props.projectNumber];
 
-  // random background circle
   let left = Math.floor(Math.random() * 200 + 700) + "px";
   let top = Math.floor(Math.random() * 200 + 150) + "px";
   let size = "scale(" + (Math.random() + 0.7) + ")";
@@ -29,7 +28,6 @@ const Project = (props) => {
     }
   };
 
-  // random img pop
   let plusMinus = Math.random() > 0.4 ? 1 : -1;
   let imgX = Math.random() * 350 * plusMinus;
   let imgY = Math.random() * 120 * plusMinus;
@@ -86,7 +84,7 @@ const Project = (props) => {
         </div>
         <div className="button-container">
           <a href={project.link} target="_blank" rel="noopener noreferrer" className="hover">
-            <span className="button">voir le site</span>
+            <span className="button">Voir le site</span>
           </a>
         </div>
       </motion.div>

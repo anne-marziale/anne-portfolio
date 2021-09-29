@@ -1,4 +1,6 @@
 import React from 'react';
+import { FaLinkedin, FaGithub, FaPortrait } from 'react-icons/fa';
+
 
 const SocialNetwork = () => {
 
@@ -21,14 +23,14 @@ const SocialNetwork = () => {
   return (
     <div className="social-network">
       <ul className="content">
-        <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" className="hover" onMouseOver={anim} >
-          <li><i className="fab fa-facebook-f"></i></li>
+        <a href="https://www.linkedin.com/in/anne-marziale-202545218/" target="_blank" rel="noopener noreferrer" className="hover" onMouseOver={anim} >
+          <li><FaLinkedin /></li>
         </a>
-        <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer" className="hover" onMouseOver={anim} >
-          <li><i className="fab fa-twitter"></i></li>
+        <a href="https://github.com/anne-marziale" target="_blank" rel="noopener noreferrer" className="hover" onMouseOver={anim} >
+          <li>< FaGithub /></li>
         </a>
-        <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" className="hover" onMouseOver={anim} >
-          <li><i className="fab fa-instagram"></i></li>
+        <a href="https://anne-marziale-cv.netlify.app" target="_blank" rel="noopener noreferrer" className="hover" onMouseOver={anim} >
+          <li>< FaPortrait /></li>
         </a>
       </ul>
     </div>
