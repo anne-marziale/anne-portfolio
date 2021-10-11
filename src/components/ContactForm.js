@@ -1,43 +1,43 @@
-import React from "react";
-import { useState } from "react";
+import React from 'react';
+import { useState } from 'react';
 
 const ContactForm = () => {
-  const [name, setName] = useState("");
-  const [company, setCompany] = useState("");
-  const [phone, setPhone] = useState("");
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
+  const [name, setName] = useState('');
+  const [company, setCompany] = useState('');
+  const [phone, setPhone] = useState('');
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    let nameS = document.getElementById("name");
-    let emailS = document.getElementById("email");
-    let messageS = document.getElementById("message");
-    let formMess = document.querySelector(".form-message");
+    let nameS = document.getElementById('name');
+    let emailS = document.getElementById('email');
+    let messageS = document.getElementById('message');
+    let formMess = document.querySelector('.form-message');
 
     const isEmail = () => {
-      let isMail = document.getElementById("not-mail");
+      let isMail = document.getElementById('not-mail');
       let regex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
 
       if (email.match(regex)) {
-        isMail.style.display = "none";
+        isMail.style.display = 'none';
         return true;
       } else {
-        isMail.style.display = "block";
-        isMail.style.animation = "dongle 1s";
+        isMail.style.display = 'block';
+        isMail.style.animation = 'dongle 1s';
         setTimeout(() => {
-          isMail.style.animation = "none";
+          isMail.style.animation = 'none';
         }, 1000);
         return false;
       }
     };
 
     if (name && isEmail() && message) {
-      const templateId = "template_aofmtvBG";
+      const templateId = 'template_aofmtvBG';
 
-      nameS.classList.remove("red");
-      emailS.classList.remove("red");
-      messageS.classList.remove("red");
+      nameS.classList.remove('red');
+      emailS.classList.remove('red');
+      messageS.classList.remove('red');
 
       sendFeedback(templateId, {
         name,
@@ -47,44 +47,44 @@ const ContactForm = () => {
         message,
       });
     } else {
-      formMess.innerHTML = "Merci de remplir correctement les champs requis *";
-      formMess.style.background = "rgb(253, 87, 87)";
-      formMess.style.opacity = "1";
+      formMess.innerHTML = 'Merci de remplir correctement les champs requis *';
+      formMess.style.background = 'rgb(253, 87, 87)';
+      formMess.style.opacity = '1';
 
       if (!name) {
-        nameS.classList.add("error");
+        nameS.classList.add('error');
       }
       if (!email) {
-        emailS.classList.add("error");
+        emailS.classList.add('error');
       }
       if (!message) {
-        messageS.classList.add("error");
+        messageS.classList.add('error');
       }
     }
   };
 
   const sendFeedback = (templateId, variables) => {
-    let formMess = document.querySelector(".form-message");
+    let formMess = document.querySelector('.form-message');
 
     window.emailjs
-      .send("gmail", templateId, variables)
+      .send('gmail', templateId, variables)
       .then((res) => {
         formMess.innerHTML =
-          "Message envoyé ! Nous vous recontacterons dès que possible.";
-        formMess.style.background = "#00c1ec";
-        formMess.style.opacity = "1";
+          'Message envoyé ! Je vous recontacterons dès que possible.';
+        formMess.style.background = '#00c1ec';
+        formMess.style.opacity = '1';
 
-        document.getElementById("name").classList.remove("error");
-        document.getElementById("email").classList.remove("error");
-        document.getElementById("message").classList.remove("error");
-        setName("");
-        setCompany("");
-        setPhone("");
-        setEmail("");
-        setMessage("");
+        document.getElementById('name').classList.remove('error');
+        document.getElementById('email').classList.remove('error');
+        document.getElementById('message').classList.remove('error');
+        setName('');
+        setCompany('');
+        setPhone('');
+        setEmail('');
+        setMessage('');
 
         setTimeout(() => {
-          formMess.style.opacity = "0";
+          formMess.style.opacity = '0';
         }, 5000);
       })
       .catch(
@@ -96,7 +96,7 @@ const ContactForm = () => {
 
   return (
     <form className="contact-form">
-      <h2>contactez-nous</h2>
+      <h2>Contactez moi</h2>
       <div className="form-content">
         <input
           type="text"
@@ -124,7 +124,7 @@ const ContactForm = () => {
           value={phone}
         />
         <div className="email-content">
-          <label id="not-mail">Email non valide</label>
+          <label id="not-mail">Email non validé</label>
           <input
             type="mail"
             id="email"
