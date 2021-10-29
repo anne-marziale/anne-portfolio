@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 
 const DynamicText = () => {
-  let array = ["Full Stack", "Junior", "Web Mobile"];
+  let array = ["FullStack", "Junior", "Mobile"];
   let wordIndex = 0;
   let letterIndex = 0;
 

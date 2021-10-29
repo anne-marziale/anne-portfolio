@@ -11,12 +11,12 @@ export const projectsData = [
   },
   {
     id: 2,
-    title: 'CV Anne Marziale',
-    date: 'Aout 2021',
-    languages: ['React', 'CSS'],
-    infos: "Création d'un CV en ligne responsive.",
-    img: './assets/img/photoCV.jpg',
-    link: 'https://anne-marziale-cv.netlify.app',
+    title: 'AngryBird Replica',
+    date: 'October 2021',
+    languages: ['C#', 'Unity Platform'],
+    infos: 'Réplique du jeu AngryBird réalisé sur la plateforme Unity.',
+    img: './assets/img/AngryBird.jpg',
+    link: 'https://simmer.io/@AnneMarziale/angrybirdsreplica',
   },
   {
     id: 3,
