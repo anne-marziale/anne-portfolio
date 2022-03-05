@@ -7,7 +7,7 @@ import {
   Redirect,
 } from 'react-router-dom';
 import Home from './pages/Home';
-import { Project1, Project2, Project3, Project4 } from './pages/Projects';
+import { Project1, Project2, Project3, Project4, Project5, Projet5 } from './pages/Projects';
 import Contact from './pages/Contact';
 import { AnimatePresence } from 'framer-motion';
 
@@ -50,12 +50,15 @@ const App = () => {
           wheelRouter('projet-4', 'projet-2');
           break;
         case url + 'projet-4':
-          wheelRouter('contact', 'projet-3');
+          wheelRouter('projet-5', 'projet-3');
           break;
+          case url + 'projet-5':
+            wheelRouter('contact', 'projet-4');
+            break;
         case url + 'contact':
           if (e.wheelDeltaY > 0) {
             setTimeout(() => {
-              history.push('projet-4');
+              history.push('projet-5');
             }, 500);
           }
           break;
@@ -74,6 +77,7 @@ const App = () => {
         <Route path="/projet-2" component={Project2} />
         <Route path="/projet-3" component={Project3} />
         <Route path="/projet-4" component={Project4} />
+        <Route path="/projet-5" component={Project5} />
         <Route path="/contact" component={Contact} />
         <Redirect to="/" />
       </Switch>

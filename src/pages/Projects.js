@@ -55,7 +55,21 @@ export const Project4 = () => {
         <Navigation />
         <Logo />
         <Project projectNumber={3} />
-        <ButtonsBottom left={"/projet-3"} right={"/contact"} />
+        <ButtonsBottom left={"/projet-3"} right={"/projet-5"} />
+      </div>
+    </main>
+  );
+};
+
+export const Project5 = () => {
+  return (
+    <main>
+      <Mouse />
+      <div className="project">
+        <Navigation />
+        <Logo />
+        <Project projectNumber={4} />
+        <ButtonsBottom left={"/projet-4"} right={"/contact"} />
       </div>
     </main>
   );

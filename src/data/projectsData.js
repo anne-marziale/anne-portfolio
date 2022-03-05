@@ -38,4 +38,14 @@ export const projectsData = [
     img: './assets/img/cine-plus.jpg',
     link: 'https://cine-plus.netlify.app',
   },
+  {
+    id: 5,
+    title: "Anne's Timeline",
+    date: 'Mars 2021',
+    languages: ['React', 'CSS'],
+    infos:
+      "Récapitulatif de tout mes projets coder sous forme de Timeline",
+    img: './assets/img/timeline.jpg',
+    link: 'https://anne-timeline.netlify.app/',
+  }
 ];
