@@ -47,38 +47,6 @@ const Contact = () => {
               <p>94190 Villeneuve Saint-Georges</p>
             </div>
           </div>
-          <div className="phone">
-            <div className="content">
-              <h4>Téléphone</h4>
-              <CopyToClipboard text="0662960130" className="hover">
-                <p
-                  style={{cursor: 'pointer'}}
-                  className="clipboard"
-                  onClick={() => {
-                    alert("Téléphone copié !");
-                  }}
-                >
-                  06 62 96 01 30
-                </p>
-              </CopyToClipboard>
-            </div>
-          </div>
-          <div className="email">
-            <div className="content">
-              <h4>Email</h4>
-              <CopyToClipboard text="annemarziale@hotmail.com" className="hover">
-                <p
-                  style={{cursor: 'pointer'}}
-                  className="clipboard"
-                  onClick={() => {
-                    alert("Email copié !");
-                  }}
-                >
-                  annemarziale@hotmail.com
-                </p>
-              </CopyToClipboard>
-            </div>
-          </div>
           <SocialNetwork />
           <div className="credits">
             <p>FromAnneMarziale - 2021</p>
